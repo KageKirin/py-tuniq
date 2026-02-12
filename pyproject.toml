@@ -21,3 +21,16 @@ maintainers = [
 Homepage = "https://github.com/KageKirin/py-tuniq"
 Documentation = "https://github.com/KageKirin/py-tuniq"
 Repository = "https://github.com/KageKirin/py-tuniq.git"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0",
+]
+
+[tool.pytest]
+minversion = "9.0"
+addopts = ["-ra", "-q"]
+pythonpath = ["src"]
+testpaths = [
+  "tests",
+]
