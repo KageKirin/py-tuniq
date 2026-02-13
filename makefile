@@ -18,6 +18,9 @@ t test:
 .PHONY: pack
 p pack:
 	uv build
+	ls -alG dist/tuniq-*.tar.gz dist/tuniq-*.whl
+	tar tvf dist/tuniq-*.tar.gz
+	tar tvf dist/tuniq-*.whl
 
 .PHONY: clean
 c clean:
